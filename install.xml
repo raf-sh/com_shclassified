@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>SH Classified</name>
+	<creationDate>2013-05-01</creationDate>
+	<author>Rafail Akhmetshin</author>
+	<authorEmail>ahmetsha@gmail.com</authorEmail>
+	<authorUrl>www.example.com</authorUrl>
+	<copyright>Copyright © 2013 - All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description><![CDATA[Admins manager]]></description>
+	<files folder="frontend">
+			<filename>index.html</filename>
+			<filename>sh_classified.php</filename>
+			<filename>controller.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>assets/js/classified.js</filename>
+			<filename>models/classified.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/classified.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/index.html</filename>
+			<filename>views/Add/view.html.php</filename>
+			<filename>views/Add/tmpl/default.php</filename>
+	</files>
+	<languages folder="languages-front">
+		<language tag="ru-RU">ru-RU/ru-RU.com_sh_classified.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu>SH Classified</menu>
+		<files folder="backend">
+			<filename>index.html</filename>
+			<filename>sh_classified.php</filename>
+			<filename>controller.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>assets/js/classified.js</filename>
+			<filename>models/classified.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/classified.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/index.html</filename>
+			<filename>views/Add/view.html.php</filename>
+			<filename>views/Add/tmpl/default.php</filename>
+		</files>
+		<languages folder="languages-admin">
+			<language tag="ru-RU">ru-RU/ru-RU.com_sh_classified.ini</language>
+		</languages>
+	</administration>
+</install>
